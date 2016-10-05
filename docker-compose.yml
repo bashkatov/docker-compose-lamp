@@ -10,7 +10,7 @@ db:
   image: "mysql:5"
   volumes:
     - ./mysql:/etc/mysql/conf.d
-    - ./webroot/db.sql:/docker-entrypoint-initdb.d
+    - ./webroot/db:/docker-entrypoint-initdb.d
   environment:
     MYSQL_ROOT_PASSWORD: root
     MYSQL_DATABASE: scotchbox
